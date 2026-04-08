@@ -55,4 +55,15 @@ nextflow run main.nf --reference [reference file] --fastq1 [fq1.fastq.gz] --fast
 | `<prefix>_compare_summary.txt` | Summary statistics of caller agreement |
 | `<prefix>_mutations.csv` | Ground-truth mutations (simulation mode only) |
 
----
+## Repository Structure
+```
+.
+├── main.nf                  # Nextflow pipeline
+├── scripts/
+│   ├── simulate_reads.py    # Mutation introduction and read simulation
+│   └── compare_vcfs.py      # VCF comparison and benchmarking
+└── results_abbreviated/     # Example output files
+```
+
+## Author
+Griffin Kramer — [linkedin.com/in/griffin-d-kramer](https://www.linkedin.com/in/griffin-d-kramer)
