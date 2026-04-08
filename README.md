@@ -35,17 +35,12 @@ Mode 2 — Real Reads:
 Mutates the reference, simulates reads, aligns, calls variants, and compares against ground truth.
 
 ```bash
-nextflow run main.nf \
-  --reference reference.fasta \
-  --prefix sample_name \
-  --outdir results/ \
-  --simulate_reads true
-```
-
 nextflow run main.nf --reference [reference file] --prefix [intermediate file name] --outdir [out directory] --simulate_reads true
+```
 
 ### Standard mode
 Runs alignment and variant calling on real paired-end FASTQ files.
 
+```bash
 nextflow run main.nf --reference [reference file] --fastq1 [fq1.fastq.gz] --fastq2 [fq2.fastq.gz] –prefix [intermediate file name] --outdir [out directory]
-
+```
