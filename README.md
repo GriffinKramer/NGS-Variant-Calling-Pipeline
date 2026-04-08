@@ -44,3 +44,15 @@ Runs alignment and variant calling on real paired-end FASTQ files.
 ```bash
 nextflow run main.nf --reference [reference file] --fastq1 [fq1.fastq.gz] --fastq2 [fq2.fastq.gz] –prefix [intermediate file name] --outdir [out directory]
 ```
+## Output
+
+| File | Description |
+|---|---|
+| `<prefix>.bam` / `.bai` | Aligned and indexed BAM |
+| `<prefix>_bcftools.vcf` | Variants called by bcftools |
+| `<prefix>_snippy.vcf` | Variants called by Snippy |
+| `<prefix>_compare.txt` | Full VCF comparison output |
+| `<prefix>_compare_summary.txt` | Summary statistics of caller agreement |
+| `<prefix>_mutations.csv` | Ground-truth mutations (simulation mode only) |
+
+---
