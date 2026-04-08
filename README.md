@@ -44,8 +44,8 @@ Runs alignment and variant calling on real paired-end FASTQ files.
 ```bash
 nextflow run main.nf --reference [reference file] --fastq1 [fq1.fastq.gz] --fastq2 [fq2.fastq.gz] –prefix [intermediate file name] --outdir [out directory]
 ```
-## Output
 
+## Output
 | File | Description |
 |---|---|
 | `<prefix>.bam` / `.bai` | Aligned and indexed BAM |
